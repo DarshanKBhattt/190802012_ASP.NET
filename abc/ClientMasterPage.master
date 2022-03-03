@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientMasterPage.master.cs"
+    Inherits="ClientMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="tm-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+                        <a href="#" class="tm-site-name">Holiday</a>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-9">
+                        <div class="mobile-menu-icon">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <nav class="tm-nav">
+						<ul>
+							<li><a href="ClientIndex.aspx" class="active">Home</a></li>
+							<li><a href="ClientAbout.aspx">About</a></li>
+							<li><a href="ClientTours.aspx">Our Tours</a></li>
+							<li><a href="ClientContact.aspx">Contact</a></li>
+						</ul>
+					</nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name</p>
+			</div>
+		</div>		
+	</footer>
+    </form>
+    </div>
+</body>
+</html>
