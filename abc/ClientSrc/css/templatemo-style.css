@@ -205,6 +205,9 @@ body { overflow-x: hidden; }
 .effect2
 {
   position: relative;
+    top: 0px;
+    left: 0px;
+    width: 346px;
 }
 .effect2:before, .effect2:after
 {

@@ -1,10 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AdminIndex.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
+    CodeFile="AdminIndex.aspx.cs" Inherits="_Default" EnableEventValidation="false"%>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<!--main content start-->
-<section id="main-content">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <section id="main-content">
 	<section class="wrapper">
-		<!-- //market-->
 		<div class="market-updates">
 			<div class="col-md-3 market-update-gd">
 				<div class="market-update-block clr-block-2">
@@ -60,11 +59,9 @@
 			</div>
 		   <div class="clearfix"> </div>
 		</div>	
-		<!-- //market-->
 		<div class="row">
 			<div class="panel-body">
 				<div class="col-md-12 w3ls-graph">
-					<!--agileinfo-grap-->
 						<div class="agileinfo-grap">
 							<div class="agileits-box">
 								<header class="agileits-box-header clearfix">
@@ -79,13 +76,11 @@
 								</div>
 							</div>
 						</div>
-	<!--//agileinfo-grap-->
 
 				</div>
 			</div>
 		</div>
 		<div class="agil-info-calendar">
-		<!-- calendar -->
 		<div class="col-md-6 agile-calendar">
 			<div class="calendar-widget">
                 <div class="panel-heading ui-sortable-handle">
@@ -94,7 +89,6 @@
                     </span>
                     <span class="panel-title"> Calendar Widget</span>
                 </div>
-				<!-- grids -->
 					<div class="agile-calendar-grid">
 						<div class="page">
 							
@@ -110,10 +104,8 @@
 					</div>
 			</div>
 		</div>
-		<!-- //calendar -->
 		<div class="col-md-6 w3agile-notifications">
 			<div class="notifications">
-				<!--notification start-->
 				
 					<header class="panel-heading">
 						Notification 
@@ -182,12 +174,10 @@
 						
 					</div>
 				
-				<!--notification end-->
 				</div>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-			<!-- tasks -->
 			<div class="agile-last-grids">
 				<div class="col-md-4 agile-last-left">
 					<div class="agile-last-grid">
@@ -196,7 +186,6 @@
 						</div>
 						<div id="graph7"></div>
 						<script>
-						    // This crosses a DST boundary in the UK.
 						    Morris.Area({
 						        element: 'graph7',
 						        data: [
@@ -277,7 +266,6 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		<!-- //tasks -->
 		<div class="agileits-w3layouts-stats">
 					<div class="col-md-4 stats-info widget">
 						<div class="stats-info-agileits">
@@ -376,4 +364,3 @@
 				</div>
 </section>
 </asp:Content>
-

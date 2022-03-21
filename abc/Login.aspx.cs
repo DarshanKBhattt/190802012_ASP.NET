@@ -28,8 +28,13 @@ public partial class Login : System.Web.UI.Page
 
         if (dt.Rows.Count == 1)
         {
-            Session["UsrName"] = dt.Rows[0]["name"];
-            Response.Redirect("~/AdminIndex.aspx");
+            Session["UsrName"] = TextBox1.Text;
+            if (TextBox1.Text == "p" && TextBox2.Text == "7")
+            {
+                Response.Redirect("~/AdminIndex.aspx");
+            }
+            else
+            Response.Redirect("~/ClientIndex.aspx");
         }
 
         //SqlCommand cmd = new SqlCommand("SELECT * FROM [users] WHERE [email] = @email AND [password] = @password", con);

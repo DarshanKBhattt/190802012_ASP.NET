@@ -30,7 +30,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="src/js/raphael-min.js"></script>
 <script type="text/javascript" src="src/js/morris.js"></script>
 </head>
-<body>
+  <body class="tm-gray-bg">
+  <form runat="server">
 <section id="container">
 <!--header start-->
 <header class="header fixed-top clearfix">
@@ -234,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1">LinkButton</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Logout">LinkButton</asp:LinkButton>
             </ul>
         </li>
         <!-- user login dropdown end -->
@@ -244,6 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 </header>
 <!--header end-->
+
         <!--sidebar start-->
 <aside>
     <div id="sidebar" class="nav-collapse">
@@ -251,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a class="active" href="Index.aspx">
+                    <a class="active" href="AdminIndex.aspx">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
@@ -280,8 +282,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span>Data Tables</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="basic_table.html">Basic Table</a></li>
-                        <li><a href="responsive_table.html">Responsive Table</a></li>
+                        <li><a href="basictable.aspx">Basic Table</a></li>
+                        <li><a href="responsive_table.aspx">Responsive Table</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
@@ -333,7 +335,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <ul class="sub">
                         <li><a href="gallery.html">Gallery</a></li>
 						<li><a href="404.html">404 Error</a></li>
-                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="Registration.aspx">Registration</a></li>
                     </ul>
                 </li>
                 <li>
@@ -451,5 +453,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //calendar -->
+    </form>
 </body>
 </html>

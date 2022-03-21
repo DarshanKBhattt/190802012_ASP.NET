@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public void Page_Load(object sender, EventArgs e)
     {
         Literal1.Text = Session["UsrName"].ToString();
     }
-    protected void LinkButton1(object sender, EventArgs e)
+    public void Logout(object sender, EventArgs e)
     {
         Session["UsrName"] = null;
         Response.Redirect("~/Login.aspx");
